@@ -80,9 +80,9 @@
             <ul
               class="p-0 shadow d-flex justify-content-end align-items-center"
             >
-              <li class="mx-2"><a href=""> FAQS</a></li>
-              <li class="mx-2"><a href="./join-us.html"> Join Us </a></li>
-              <li class="mx-2"><a href="./sign-in.html"> Sign In</a></li>
+              <li class="mx-2"><a href="#"> FAQS</a></li>
+              <li class="mx-2"><a href="#"> Join Us </a></li>
+              <li class="mx-2"><a href="#"> Sign In</a></li>
             </ul>
           </div>
         </div>
@@ -100,45 +100,38 @@
         class="d-flex justify-content-center align-items-center me-auto ms-auto"
       >
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html"
+          <a
+            class="nav-link px-2 py-1"
+            aria-current="page"
+            routerLink="home"
+            routerLinkActive="bg-danger rounded-3 text-white"
             >Home</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./shop.html">Shop </a>
-        </li>
-        <li class="nav-item dropdown">
           <a
-            class="nav-link"
-            href="./about.html"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            >Pages
+            class="nav-link px-2 py-1"
+            aria-current="page"
+            routerLink="shop"
+            routerLinkActive="bg-danger rounded-3 text-white"
+            >Shop
           </a>
-          <ul class="dropdown-menu">
-            <li class="p-2 ps-3 text-start">
-              <a href="./about.html">About Us</a>
-            </li>
-            <li class="p-2 ps-3 text-start">
-              <a href="./shop-details.html"> Shop details</a>
-            </li>
-            <!-- <li class="p-2 ps-3 text-start">
-              <a href="./shopping-cart.html">Shopping cart</a>
-            </li> -->
-            <li class="p-2 ps-3 text-start">
-              <a href="./check-out.html">Check Out</a>
-            </li>
-            <li class="p-2 ps-3 text-start">
-              <a href="./blog-details.html">Blog details</a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./blog.html">Blog </a>
+          <a
+            class="nav-link px-2 py-1"
+            aria-current="page"
+            routerLink="blog"
+            routerLinkActive="bg-danger rounded-3 text-white"
+            >Blog
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./contacts.html"
+          <a
+            class="nav-link px-2 py-1"
+            aria-current="page"
+            routerLink="contact"
+            routerLinkActive="bg-danger rounded-3 text-white"
             >Contacts</a
           >
         </li>
@@ -173,13 +166,13 @@
           ></a>
         </li>
         <li class="nav-item d-md-block d-none">
-          <a class="nav-link position-relative" href=""
+          <a class="nav-link position-relative" href="#"
             ><i class="fa-fw fa-solid fa-cart-shopping"></i>
           </a>
           <div class="cart-item position-absolute">0</div>
         </li>
         <li class="nav-item d-md-block d-none">
-          <a class="nav-link" href=""
+          <a class="nav-link" href="#"
             ><i class="fa-fw fa-regular fa-user"></i
           ></a>
         </li>
@@ -203,9 +196,9 @@
     <div class="offcanvas-body">
       <div class="link">
         <ul class="p-0 d-flex justify-content-center align-items-center">
-          <li class="mx-md-3 mx-2"><a href=""> FAQS</a></li>
-          <li class="mx-md-3 mx-2"><a href="./join-us.html"> Join Us </a></li>
-          <li class="mx-md-3 mx-2"><a href="./sign-in.html"> Sign In</a></li>
+          <li class="mx-md-3 mx-2"><a href="#"> FAQS</a></li>
+          <li class="mx-md-3 mx-2"><a href="#"> Join Us </a></li>
+          <li class="mx-md-3 mx-2"><a href="#"> Sign In</a></li>
         </ul>
       </div>
       <div class="icon mt-3">
@@ -232,55 +225,25 @@
           class="ps-3 d-flex flex-column justify-content-sm-start align-items-start"
         >
           <li class="nav-item mb-3">
-            <a class="nav-link active" aria-current="page" href="./index.html"
+            <a class="nav-link px-2 py-1" aria-current="page" routerLink="home"
               >Home</a
             >
           </li>
           <li class="nav-item mb-3">
-            <a class="nav-link" aria-current="page" href="./shop.html">Shop </a>
-          </li>
-          <li class="nav-item accordion-collapse mb-3">
-            <a
-              class="nav-link"
-              href="#kk"
-              role="button"
-              aria-expanded="false"
-              data-bs-toggle="collapse"
-              >Pages <i class="ms-2 i fa-solid fa-caret-right"></i>
+            <a class="nav-link px-2 py-1" aria-current="page" routerLink="shop"
+              >Shop
             </a>
-            <div class="accordion-body mt-3 collapse" id="kk">
-              <a
-                href="./about.html"
-                class="mb-3 list-group-item list-group-item-action border-0 ms-3"
-                >About Us</a
-              >
-              <a
-                href=" ./shop-details.html"
-                class="mb-3 list-group-item list-group-item-action border-0 ms-3"
-              >
-                Shop details</a
-              >
-              <!-- <a href="./shopping-cart.html" class="mb-3 list-group-item list-group-item-action border-0 ms-3"
-                >Shopping cart</a
-              > -->
-              <a
-                href="./check-out.html"
-                class="mb-3 list-group-item list-group-item-action border-0 ms-3"
-              >
-                Check Out</a
-              >
-              <a
-                href="./blog-details.html"
-                class="mb-3 list-group-item list-group-item-action border-0 ms-3"
-                >Blog details</a
-              >
-            </div>
           </li>
           <li class="nav-item mb-3">
-            <a class="nav-link" aria-current="page" href="./blog.html">Blog </a>
+            <a class="nav-link px-2 py-1" aria-current="page" routerLink="blog"
+              >Blog
+            </a>
           </li>
           <li class="nav-item mb-3">
-            <a class="nav-link" aria-current="page" href="./contacts.html"
+            <a
+              class="nav-link px-2 py-1"
+              aria-current="page"
+              routerLink="contact"
               >Contacts</a
             >
           </li>

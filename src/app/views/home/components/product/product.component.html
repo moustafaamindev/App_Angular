@@ -11,7 +11,10 @@
         </div>
       </div>
       <div class="col-12 product_cart d-flex flex-wrap">
-        <div class="product_item col-lg-3 col-sm-6 col-12 new-arrivals-1">
+        <div
+          class="product_item col-lg-3 col-sm-6 col-12 new-arrivals-1"
+          *ngFor="let product of products"
+        >
           <div class="">
             <div class="card">
               <div class="btn_gro">
@@ -25,13 +28,10 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
               </div>
-              <span class="new">NEW</span>
-              <img
-                src="../../../../../assets/imgs/products/product-1.jpg"
-                alt=""
-              />
+              <span class="new">{{ product.over }}</span>
+              <img src="{{ product.imgsrc }}" alt="" />
               <div class="card-body">
-                <h2 class="card-title">Piqué Biker Jacket</h2>
+                <h2 class="card-title">{{ product.titlename }}</h2>
                 <p class="card-text rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -40,7 +40,7 @@
                   <i class="fa-regular fa-star"></i>
                 </p>
                 <div class="sale">
-                  <h3>$67.24</h3>
+                  <h3>${{ product.sale }}</h3>
                   <div class="change-color">
                     <span class="blue"></span>
                     <span class="black"></span>
@@ -48,290 +48,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 hot-sales-1">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <img
-                src="../../../../../assets/imgs/products/product-2.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Biker Jacket</h2>
-                <p class="card-text rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$60.24</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 new-arrivals-2">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <span class="saler">SALE</span>
-              <img
-                src="../../../../../assets/imgs/products/product-3.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Multi-pocket Chest Bag</h2>
-                <p class="card-text rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$43.48</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 hot-sales-2">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <img
-                src="../../../../../assets/imgs/products/product-4.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Diagonal Textured Cap</h2>
-                <p class="card-text rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$60.9</h3>
-
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 new-arrivals-3">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <img
-                src="../../../../../assets/imgs/products/product-5.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Lether Backpack</h2>
-                <p class="card-text rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$31.37</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 hot-sales-3">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <span class="saler">SALE</span>
-              <img
-                src="../../../../../assets/imgs/products/product-6.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Ankle Boots</h2>
-                <p class="card-text rating">
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$98.49</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 new-arrivals-4">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <img
-                src="../../../../../assets/imgs/products/product-7.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">T-shirt Contrast Pocket</h2>
-                <p class="card-text rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$49.66</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="product_item col-lg-3 col-sm-6 col-12 hot-sales-4">
-          <div class="">
-            <div class="card">
-              <div class="btn_gro">
-                <a href="#" class="btn">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="#" class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-              <img
-                src="../../../../../assets/imgs/products/product-8.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h2 class="card-title">Basic Flowing Scarf</h2>
-                <p class="card-text rating">
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </p>
-                <div class="sale">
-                  <h3>$26.28</h3>
-                  <div class="change-color">
-                    <span class="blue"></span>
-                    <span class="black"></span>
-                    <span class="yallow"></span>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="add-cart">+ Add To Cart</a>
+              <a href="#" class="add-cart">{{ product.add }}</a>
             </div>
           </div>
         </div>

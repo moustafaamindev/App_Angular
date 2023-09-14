@@ -1,11 +1,7 @@
-@import "../../../../../assets/scss/vars.scss";
-@import "../../../../../assets/scss/mixins.scss";
-@import "../../../../../assets/scss/glubal-rules.scss";
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/glubal-rules.scss";
 
-$main-color: #e53637;
-$secondry-color: #b7b7b7;
-$white: #ffffff;
-$black: #111111; // start header
 .header {
   .top-header {
     background-color: #111111;
@@ -70,23 +66,10 @@ $black: #111111; // start header
         a {
           font-size: 18px;
           color: #111111;
-          padding: 3px 0;
-        }
-        &::after {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          background: $main-color;
-          content: "";
-          transition: all, 0.5s ease;
-          transform: scale(0, 1);
-        }
-        &:hover {
-          &::after {
-            transform: scale(1, 1);
-            transition: transform 0.3s ea;
+          &:hover {
+            background-color: #dc3545;
+            color: $white;
+            border-radius: 0.5rem;
           }
         }
       }
